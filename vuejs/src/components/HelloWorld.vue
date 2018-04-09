@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <AppHeader/>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -84,7 +85,14 @@
 </template>
 
 <script>
+
+import AppHeader from '@/components/AppHeader'
+
+console.log("HelloWorld hello");
 export default {
+  components:{
+    AppHeader
+  },
   name: 'HelloWorld',
   data () {
     return {
